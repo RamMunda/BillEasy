@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Billeasy</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+
+        *{
+        margin: 0;
+        padding: 0;
+        }
+    .heading {
+        display: inline-block;
+        width: 100%;
+
+    }
+    .heading-icon-section{
+        display: inline-block;
+        width: 215px;
+        margin-top: 12px;
+        margin-left: 50px;
+    }
+    .heading-icon{
+        display: inline-block;
+         float:right;
+    }
+    .heading > .heading-icon-section >.heading-icon >img{
+        width: 82%;
+    }
+    .header-menu{
+        display: inline-block;
+        width: 70%;
+        float: right;
+
+    }
+    .header-menu >i{
+        
+        float: right;
+        }
+    .header-menu-section{
+        display: inline-block;
+        width: 89%;
+        margin-top: 30px;
+    }
+    .header-menu > .header-menu-section >ul{
+        list-style: none;
+      
+    } 
+    .header-menu > .header-menu-section >ul >li{
+        display: inline-block;
+        float: right;
+        font-family: nunito,sans-serif;
+        margin: 0px 15px 0px 15px;
+        color: gray;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .header-menu > .header-menu-section >ul >li>#toggle{
+        display: none;
+        }
+    .header-menu > .header-menu-section >ul >li:hover{
+        color: black;
+        cursor: pointer;
+    }
+        .header-menu > .header-menu-section >ul >li>ul{
+            margin: 30px 0px 0px 0px;
+            position: relative;
+            z-index: 10;
+            display: none;
+        }
+        .header-menu > .header-menu-section >ul >li>ul>li{
+           list-style: none;
+           width: auto;
+           height: 40px;
+        }
+/*
+        .header-menu >.header-menu-section >ul >.features:hover + .header-menu > .header-menu-section >ul >.features >ul{
+            color: black;
+            cursor: pointer;
+             display: block;
+        }
+*/
+        .main-section{
+            display: inline-block;
+            height:700px;
+            width: 100%;
+            background-color:#06354f;
+            position: relative;
+            overflow: hidden;
+        }
+        .main-content-section{
+         display: inline-block;
+         margin: 166px 150px 50px 150px;
+        }
+        .main-content-section >h1{
+        text-align: center;
+        color: white;
+        font-family: nunito,sans-serif;
+        font-size: 47px;
+        
+        }
+        .main-content-section >p{
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+        color:#9fc0d3;
+        font-family: nunito,sans-serif;
+        font-size: 19px;
+        line-height: 1.5;
+        }
+        .main-content-button-section{
+        display: inline-block;
+        width: 100%; 
+        }
+        .sign-up-button-section{
+          display: inline-block;
+        width:50%;   
+        }
+        .sign-up-button{
+        display: inline-block;
+        float: right;
+        margin-right: 25px;
+        width: 168px;
+        transform: scale(1);
+        transition: 1s;
+        }
+        .sign-up-button:hover{
+        cursor: pointer;
+        transform: scale(.9);
+        }
+        .main-content-button-section > .sign-up-button-section > .sign-up-button >a{
+        font-family: nunito,sans-serif;
+        color: white;
+        background-color: darkturquoise;
+        padding: 10px 45px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 15px;
+        transition:1s;
+        transform: scale(1);
+        width:100px;
+        }
+        .get-app-button-section{
+         display: inline-block;
+         width: 50%;
+         float: right;  
+        }
+        .get-app-button{
+         display: inline-block;
+         width: 230px;
+         transform: scale(1);
+         transition: 1s;
+        }
+         .get-app-button:hover{
+         cursor: pointer;
+         transform: scale(0.9);
+        }
+        .get-app-button-section >.get-app-button >a{
+          font-family: nunito,sans-serif;
+          color:#0cc1b0;
+          border: 1px solid #0cc1b0;
+          background-color: #06354f;
+          padding: 10px 45px;
+          border-radius: 30px;
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 15px;    
+        }
+/*
+        .get-app-button-section >.get-app-button >a:hover{
+          cursor: pointer;
+          transform: scale(.7);
+          padding: 8px 40px; 
+        }
+*/
+        .main-content-background-image{
+          position: absolute;
+          bottom: -86px;
+          left: -73px;
+          height: 280px;
+          width: 271px;
+          background-color: #0ebee5;
+          border-radius: 0px 72px;
+          transform: rotate(-29deg);
+          z-index: 5;  
+        }
+        .main-content-background-image-2{
+             width: 350px;
+             height: 350px;
+            display: inline-block;
+            background-color: #0ebee5;
+            position: absolute;
+            right: -51px;
+            bottom: -51px;
+            border-radius: 50%;
+        }
+        .main-content-background-image-3{
+            display: inline-block;
+    position: absolute;
+    right: 45px;
+    bottom: -92px;
+    transform: rotate(-31deg);
+    z-index: 10;
+        }
+        .main-content-background-image-3 >img{
+         max-width: 408px; 
+        }
+        .main-content-background-image-4{  
+          display: inline-block;
+    position: absolute;
+    right: -37px;
+    bottom: 83px;
+    z-index: 10;
+    transform: rotate(-30deg);      
+        }
+        .main-content-background-image-4 >img{
+        max-width: 100px;  
+        }
+        .paper-receipt{
+            display: inline-block;
+            width: 100%;
+            position: relative;
+        }
+        .paper-receipt >.circle-background-image,#paper-receipt >.circle-background-image{
+            display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right,#7D3C98, #0ebee5);
+    border-radius: 50%;
+    position: absolute;
+    top: -29px;
+    right: 100px;
+            z-index: 15;
+        }
+        .paper-receipt >.square-background-image,#paper-receipt >.square-background-image{
+        display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right, #0ebee5,#58D68D);
+    border-radius: 90px;
+    position: absolute;
+    top: 243px;
+    right: 258px;
+            z-index: -1;
+    transform: rotate(33deg);
+   }
+        #paper-receipt >.square-background-image{
+            z-index: 100;
+        }
+        .paper-receipt-content-section{
+         display: inline-block;
+         width: 60%;
+        }
+        .paper-receipt-content-section >.paper-receipt-content{
+         display: inline-block;
+         float: right;
+         width: 70%;
+         margin: 200px 0px;
+        }
+        .paper-receipt-content-section >.paper-receipt-content >h1, #paper-receipt-content-section >#paper-receipt-content >h1{
+         font-family: nunito,sans-serif;
+         font-size: 45px;
+        }
+        .paper-receipt-content-section >.paper-receipt-content >p{
+         font-family: nunito,sans-serif;
+         margin: 20px 10px 10px 0px;
+         font-size: 20px;
+        }
+        #paper-receipt{
+            display: inline-block;
+            width: 100%;
+            background-color: #effafc; 
+            position: relative;
+        }
+       #paper-receipt-content-section >#paper-receipt-content {
+        display: inline-block;
+        width: 76%;
+        float: right;
+       }
+       #paper-receipt-content-section {
+       display: inline-block;
+       width: 56%;
+       position: relative;
+       margin: 200px 30px 100px 0px;
+       z-index: 200;
+       }
+        #paper-receipt-content-section >#paper-receipt-content >#digital-receipt-content{
+            display: inline-block;
+            font-size: 20px;
+            font-family: nunito,sans-serif;
+            margin: 20px 10px 10px 0px;
+            font-size: 20px;
+        }
+         #paper-receipt-content-section >#paper-receipt-content >form >input[type="text"]{
+        display: inline-block;
+        margin: 30px 0px 40px 0px;
+        font-family: nunito;
+        font-size: 20px;
+        padding: 10px;
+        border: none;
+        outline:none;
+        border-bottom: 1px solid gray;
+        background-color:transparent;
+        }
+        #paper-receipt-content-section >#paper-receipt-content >a{
+    display: inline-block;
+    font-family: nunito,sans-serif;
+    color: white;
+    background-image: linear-gradient(to right, #0ebee5,#58D68D);
+    padding: 13px 65px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    transition:.5s;
+    transform-origin: 50% 50%;
+    margin: 20px 0px 20px 0px;
+    width: 225px;
+    transform: scale(1);
+    
+        }
+        #paper-receipt-content-section >#paper-receipt-content >a:hover{
+          cursor: pointer;
+          transform: scale(.9);
+        }
+        #paper-receipt-content-section >#paper-receipt-content >#spec-p{
+          font-family: nunito,sans-serif;
+          margin: 20px 10px 10px 0px;
+          font-size: 17px;
+          color: #0cc1b0;
+          font-weight: 600;
+        }
+        .group-share{
+          display: inline-block;
+          width: 100%;
+          position: relative;
+        }
+        .group-share >.group-share-section{
+          display: inline-block;
+          width: 60%;
+          margin: 150px 0px;  
+        }
+        .group-share >.group-share-section >.group-share-content-section{
+          display: inline-block;
+          width: 75%;
+          float: right;
+        }
+        .group-share >.group-share-section >.group-share-content-section >h1{
+          font-family: nunito,sans-serif;
+          font-size: 45px;
+          margin: 10px 0px;
+          color: darkslategray;
+        }
+        .group-share >.group-share-section >.group-share-content-section >h2{
+          font-family: nunito,sans-serif;
+          font-size: 29px;
+          color: darkslategray;
+          margin: 10px 0px;
+
+        }
+        .group-share >.group-share-section >.group-share-content-section >p{
+         font-family: nunito,sans-serif;
+         font-size: 21px;
+         color: darkslategray;
+         margin: 20px 0px;
+        }
+        .group-share >.group-share-section >.group-share-content-section >h3{
+           display: inline-block;
+           font-family: nunito,sans-serif;
+           font-size: 16px;
+           color: deepskyblue;
+           margin: 80px 0px;
+           padding: 6px 16px; 
+           border-radius: 23px;
+           transition:1s; 
+           border: 1px solid transparent ;
+           width: 115px;
+           transform: scale(1);
+        }
+        .group-share >.group-share-section >.group-share-content-section >h3:hover{
+           background-color: aliceblue;
+           border: 1px solid deepskyblue ;
+           cursor: pointer;
+           transform: scale(.8);
+        }
+        .group-share-picture{
+           display: inline-block;
+           position: absolute;
+           bottom: 0px;
+           right: 0;
+        }
+        .earn-receipt{
+             display: inline-block;
+    width: 100%;
+    background-color: #06354f;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+        }
+        .earn-receipt-section{
+          display: inline-block;
+          margin: 150px 10px 50px 0px;
+          width: 52%;
+        }
+        .earn-receipt-content-section{
+         display: inline-block;
+         float: right;
+         width: 66%;
+        }
+        .earn-receipt >  .earn-receipt-section > .earn-receipt-content-section >h1{
+         color: white;
+         font-family: nunito,sans-serif;
+         font-size: 50px;
+        }
+        .earn-receipt >  .earn-receipt-section > .earn-receipt-content-section >p{
+          font-family: nunito,sans-serif;
+          color: lightgray;
+          margin: 20px 0px;
+          font-size: 20px;
+          width: 80%;
+        }
+        .earn-receipt >  .earn-receipt-section > .earn-receipt-content-section >h3{
+         color: #0cc1b0;
+         font-family: nunito,sans-serif;
+         font-size: 15px;
+         margin: 60px 0px;
+         display: inline-block;
+         padding: 10px 20px;
+         width:200px; 
+         transform: scale(1);
+         transition: 1s;
+        }
+          .earn-receipt >  .earn-receipt-section > .earn-receipt-content-section >h3:hover{
+         background-color: rgba(28,211,189,.1);
+         border-radius: 20px;
+         cursor: pointer;
+         transform: scale(.8);
+        }
+        .earn-receipt-castle-resturant{
+                width: 35%;
+    display: inline-block;
+    float: right;
+    margin: 200px 145px 60px 0px;
+    background-image: linear-gradient(to right, #F37F12,#F31223);
+    border-radius: 30px;
+        }
+        .earn-receipt-castle-resturant-icon-section{
+                display: inline-block;
+    width: 100%;
+        }
+        .earn-receipt-castle-resturant-icon{
+            display: inline-block;
+    float: right;
+    margin-right: 25px;
+    margin-top: 20px;
+        }
+        .earn-receipt-castle-resturant >p{
+                color: white;
+    font-family: nunito,sans-serif;
+    display: inline-block;
+    margin: 10px 10px 10px 35px;
+    font-size: 28px;
+        }
+        .earn-receipt-castle-resturant >.gold-section{
+                display: inline-block;
+    width: 100%;
+    margin: 20px 0px;
+        }
+        .earn-receipt-castle-resturant >.gold-section >.gold{
+        display: inline-block;
+    width: 40%;
+    padding: 15px 0px;
+    text-align: center;
+    color: white;
+    font-family: nunito,sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 27px;
+    margin: 0px 0px 20px 50px;
+    background-color: brown;
+        }
+        .gold-section >.gold-section2{
+            display: inline-block;
+    width: 43%;
+    float: right;
+    margin-right: 30px;
+        }
+        .gold-section >.gold-section2 >#mint{
+                text-align: right;
+    color: white;
+    font-family: nunito,sans-serif;
+    font-size: 18px;
+        }
+        .gold-section >.gold-section2 >p{
+            margin-top: 10px;
+    text-align: right;
+    color: white;
+    font-family: nunito,sans-serif;
+    font-size: 18px;
+        }
+        .square-bg-image{
+                display: inline-block;
+    position: absolute;
+    top: -84px;
+    right: 0;
+    transform: rotate(55deg);
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(to right, #F37F12,#F31223);
+    border-radius: 68px;
+        }
+    .circle-bg-image{
+    display: inline-block;
+    left: -116px;
+    position: absolute;
+    bottom: 1px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color:#0edbe5;
+        }
+        .info-work{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right, #0ebee5,#58D68D);
+    border-radius: 90px;
+    position: absolute;
+    top: 243px;
+    right: 258px;
+    z-index: -1;
+    transform: rotate(33deg);
+        }
+        .tracing-info-picture{
+    display: inline-block;
+    margin: 100px 138px 20px 20px;
+    width: 319px;
+    float: right;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 10px 0 rgba(0, 0,0,0.7);
+        }
+        .tracing-info-picture >img{
+    margin-top: 30px;
+    margin-bottom: 101px;
+        }
+        .tracing-info-picture >#img{
+            width: 80px;
+            margin: 0px 10px 10px 10px;
+        }
+        .signup-dashboard{
+                display: inline-block;
+    width: 100%;
+    margin-top: 200px;
+        }
+        .signup-dashboard-pic{
+                display: inline-block;
+    width: 82%;
+    float: right;
+    position: relative;
+        }
+        
+        .signup-dashboard-pic >img{
+        
+    width: 900px;
+        }
+       .signup-dashboard > .signup-dashboard-pic >.dashboard-circle-pic{
+            display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: -68px;
+    right: 480px;
+    z-index: -1;
+    background-color: rgba(51, 181, 255,.1);
+        }
+        .signup-dashboard > .signup-dashboard-pic >.dashboard-square-pic{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    z-index: -1;
+    transform: rotate(45deg);
+    background-color: rgba(51, 181, 255,.1)
+        }
+        .footer{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    background-color: #06354f;
+    color:white;
+        }
+        .footer >.sign-up-card{
+    display: inline-block;
+    width: 88%;
+    background-image: linear-gradient(135deg, #0abee5, #19d4a9 97%);
+    border-radius: 40px;
+    position: absolute;
+    top: -143px;
+    left: 6%;
+        }
+        .footer >.sign-up-card >h1{
+    font-family: nunito,sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 45px;
+    color: white;
+        }
+        .footer >.sign-up-card >p{
+    font-family: nunito,sans-serif;
+    text-align: center;
+    color: white;
+    margin: 20px 0px;
+    font-size: 20px;
+        }
+        .footer >.sign-up-card >.main-content-button-section{
+            margin: 37px 0px 73px 0px;
+        }
+        .footer >.sign-up-card >.main-content-button-section >.sign-up-button-section >.sign-up-button >a{
+           background-color: #06354f;
+           color: white;
+        }
+         .footer >.sign-up-card >.main-content-button-section >.get-app-button-section >.get-app-button >a{
+          color: #06354f;
+          border: 1px solid #06354f;
+          background-color: transparent;
+        }
+       .footer >.footer-contents-section{
+                display: inline-block;
+    width: 100%;
+    margin: 200px 0px 0px 0px;
+        }
+        .footer >.footer-contents-section >.footer-content-section{
+          display: inline-block;
+          width: 88%;
+          margin-top: 50px;
+        }
+        .footer >.footer-contents-section >.footer-content-section >.footer-content-section1{
+         display: inline-block;
+         float: right;
+         width: 80%;
+        }
+        .footer >.footer-contents-section >.footer-content-section >.footer-content-section1 >.legal{
+         display: inline-block;
+         margin: 0px 50px 30px 0px;
+         float: left;
+        }
+         .footer >.footer-contents-section >.footer-content-section >.footer-content-section1 >.legal >h1{
+        font-family: nunito,sans-serif;
+        margin: 10px 0px;
+        font-size: 22px;
+             
+        }
+         .footer >.footer-contents-section >.footer-content-section >.footer-content-section1 >.legal >p{
+        font-family: nunito,sans-serif;
+        margin: 10px 0px;
+        font-size: 17px;
+        color: #7f9cad;
+        }
+        .footer >.footer-contents-section >.footer-content-section >.footer-content-section1 >.company{
+        display: inline-block;
+        display: inline-block;
+        margin: 0px 101px 30px 120px;
+  
+        }
+        .footer >.footer-contents-section >.footer-content-section >.footer-content-section1 >.company >h1{
+        font-family: nunito,sans-serif;
+        margin: 10px 0px; 
+        font-size: 22px;
+        }
+        .footer >.footer-contents-section >.footer-content-section >.footer-content-section1 >.company >p{
+        font-family: nunito,sans-serif;
+        margin: 10px 0px; 
+        font-size: 17px;
+        color: #7f9cad;
+        }
+        .footer >.footer-contents-section >.footer-content-section >.footer-content-section1 >.contact{
+        display: inline-block;
+        width: 300px;
+        float: right;
+        margin: 5px 0px;
+  
+        }
+        .footer >.footer-contents-section >.footer-content-section >.footer-content-section1 >.contact >h1{
+        font-family: nunito,sans-serif;
+        margin: 10px 0px;
+        font-size: 22px;
+
+        }
+        
+        .footer >.footer-contents-section >.footer-content-section >.footer-content-section1 >.contact >p{
+        font-family: nunito,sans-serif;
+        margin: 10px 0px; 
+        line-height: 1.5;
+        font-size: 17px;
+        color: #7f9cad;                    
+        }
+        .footer-icon{
+        width: 66%;
+        font-size: 25px;
+        display: inline-block;
+        margin: 100px 0px;
+        }
+        .footer-icon-section{
+        display: inline-block;
+        float: right;
+        }
+        .footer-icon >.footer-icon-section >a >i{
+        margin: 0px 40px;
+        color: white;
+        }
+        .footer-icon >.footer-icon-section >a >i:hover{
+        cursor: pointer;
+        }
+        .footer-version{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-family: nunito,sans-serif;
+        font-size: 15px;
+        color: #7f9cad;
+        margin-bottom: 150px;
+        }
+        @media (max-width:992px){
+            .header-menu > .header-menu-section >ul >#li{
+                display: none;
+            }
+             .header-menu > .header-menu-section >ul >li>#toggle{
+        font-size: 29px;
+        display: block;
+        margin-right: 30px;
+        color: cadetblue;
+            }
+            .header-menu > .header-menu-section >ul >li>#toggle:hover{
+                color: steelblue;
+                cursor: pointer;
+            }
+        .header-menu-section{
+            margin-top: 15px;
+        }
+            .header-menu {
+                width: 10%;
+            }
+            }
+        
+    </style>
+</head>
+<body>
+<!--
+   <script>
+    $(document).ready(function(){
+  $(" .header-menu > .header-menu-section >ul >li>").click(function(){
+    $(".header-menu > .header-menu-section >ul >li><ul>li").css({"display":"block"});
+  });
+});
+</script>
+-->
+    <div class="heading">
+        <div class="heading-icon-section">
+            <div class="heading-icon">
+              <img src="./image/bill-easy-icon.svg">
+            </div>
+        </div>
+
+
+        <div class="header-menu">
+
+            <div class="header-menu-section">
+                <ul> 
+                   <li><i id="toggle" class="fas fa-sliders-h"></i></li>                   
+                    <li id="li">Sign In</li>
+                    <li id="li">Sign Up</li>
+                    <li id="li">FAQs</li>
+                    <li id="li">About</li>
+                    <li id="li">Buisseness</li>
+                    <li class="features" id="li">Features
+                    <i class="fas fa-caret-down"></i>
+                    <ul>
+                        <li>Paperless Billing</li>
+                        <li>Groupshare</li>
+                        <li>Paperless Billing</li>
+                        <li>Paperless Billing</li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <div class="main-section">
+       
+        <div class="main-content-section">
+            <h1>Paperless Billing. It's Happening!</h1>
+            <p>No more of collecting receipts for warranties or scanning them to track your expenses. Just walk in to one of our Billeasy Supported outlets, give you number and get a paperless receipt.</p>
+        </div> 
+        
+        <div class="main-content-button-section">
+        
+            <div class="sign-up-button-section">
+               <div class="sign-up-button">
+                   <a>SIGN UP</a>
+               </div>
+            </div> 
+              <div class="get-app-button-section">
+               <div class="get-app-button">
+                   <a>GET THE APP</a>
+               </div>
+            </div> 
+             
+        </div>
+        <div class="main-content-background-image">
+        
+    </div>
+    <div class="main-content-background-image-2">
+        
+    </div>
+    
+    <div class="main-content-background-image-3">
+        
+       <img src="image/tablet.png"> 
+    </div>
+    
+    <div class="main-content-background-image-4">
+        <img src="image/smartphone.png">
+        
+    </div>
+    </div>
+    
+    <div class="paper-receipt">
+        
+        <div class="circle-background-image"></div>
+        <div class="square-background-image"></div>
+        
+        <div class="paper-receipt-content-section">
+            
+           <div class="paper-receipt-content">
+              <h1>Say Goodbye to Paper Receipts. 👋 </h1>
+              <p>Let go of those heaps of unwanted paper. Here’s a better way to store those paper receipts.</p>
+           </div>
+        </div>
+    </div>
+    
+    
+       <div id="paper-receipt">
+        
+        <div class="circle-background-image"></div>
+        <div class="square-background-image"></div>
+        
+        <div id="paper-receipt-content-section">
+            
+           <div id="paper-receipt-content">
+              <h1>Say Hello to Digital Receipts </h1>
+              <p id="digital-receipt-content">A smarter world requires a smarter solution for the age old problem to paper receipts. Through Billeasy, you can automatically store digital receipts. And no, you need not take a photo of your paper receipt.</p>
+              
+                <form>
+              <input id="input" type="text" placeholder="Enter the name">
+              
+          </form>
+          <a>GET A SIMPLE DIGITAL RECEIPT </a>
+          <p id="spec-p">OK,BUT HOW DOES IT WORK.</p>
+           </div>
+        
+        </div>
+    </div>
+    <div class="group-share">
+       
+        <div class="group-share-section">
+            
+            <div class="group-share-content-section">
+                
+                <h1>Introducing Groupshare</h1>
+                <h2>Divide Bills Equally.</h2>
+                <p>Avoid the social awkwardness of splitting bills. Take charge of the receipt by splitting bills between your friends based on what one consumes.</p>
+                <h3>TELL ME MORE</h3>
+            </div>
+        </div> 
+        <div class="group-share-picture">
+            <img src="image/pizza.png">
+        </div>
+    </div>
+    <div class="earn-receipt">
+        <div class="earn-receipt-section">
+            <div class="earn-receipt-content-section">
+                <h1>Earn Mints on Every Receipt </h1>
+                <p>For every receipt that you get, earn mints of that particular brand to unlock digital loyalty cards!</p>
+                <h3>WHAT ARE THESE CARDS ?</h3>
+            </div>
+        </div>
+        <div class="earn-receipt-castle-resturant">
+            <div class="earn-receipt-castle-resturant-icon-section">
+                <div class="earn-receipt-castle-resturant-icon">
+                    <img src="image/castle.png">
+                </div>
+            </div>
+            <p>Castle Restaurant</p>
+            <div class="gold-section">
+                <div class="gold"> 
+                GOLD 
+                </div>
+                <div class="gold-section2">
+                    <p id="mint">MINTS</p>
+                    <p>250</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="square-bg-image">
+            
+        </div>
+        <div class="circle-bg-image">
+            
+        </div>
+        
+    </div>
+    
+    <div class="group-share">
+       
+        <div class="group-share-section">
+            
+            <div class="group-share-content-section">
+                
+                <h1>Know Where Your Money Goes</h1>
+                <h2>Divide Bills Equally.</h2>
+                <p>Through digital receipts, automatically track your expenses and keep tabs on your finances!</p>
+                <h3>OKAY,BUT HOW DOES IT WORK ?</h3>
+            </div>
+        </div> 
+        <div class="info-work">
+            
+        </div>
+        <div class="tracing-info-picture">
+         <img  src="image/Overview%20Screen%20Content.png">
+         <img id="img" src="image/red.png">
+         <img id="img" src="image/green.png">
+         <img id="img" src="image/voilet.png">
+        </div>
+    </div>
+    
+    <div class="signup-dashboard">
+        
+       <div class="signup-dashboard-pic" >
+           <img src="image/signup-dashboard.png">
+           <div class="dashboard-circle-pic">
+       </div>
+        <div class="dashboard-square-pic">
+       </div>
+       </div>
+    
+    </div>
+    <div class="footer">
+          <div class="sign-up-card">
+           <h1>Sign Up Now! It’s Free.</h1>
+           <p>We’re also available on the App Store and Google Play Store</p>
+           <div class="main-content-button-section">
+        
+            <div class="sign-up-button-section">
+               <div class="sign-up-button">
+                   <a>SIGN UP</a>
+               </div>
+            </div> 
+              <div class="get-app-button-section">
+               <div class="get-app-button">
+                   <a>GET THE APP</a>
+               </div>
+            </div> 
+             
+        </div> 
+       </div>
+       
+        <div class="footer-contents-section">
+            <div class="footer-content-section">
+               <div class="footer-content-section1">
+                <div class="legal">
+                    <h1>Legal</h1>
+                    <p>Disclaimer</p>
+                    <p>Term and Condition</p>
+                    <p>Privacy and Poicly</p>
+                </div>
+                <div class="company">
+                    <h1>Company</h1>
+                    <p>Blogs</p>
+                    <p>Jobs</p>
+                    <p>Apply now</p>
+                </div>
+                <div class="contact">
+                   <h1>Contact</h1>
+                    <p>200, 201, Crescent Business Park, Behind Safed Pool MTNL Telephone Exchange, Andheri-Kurla Road, Sakinaka, Andheri (East), Sakinaka, Mumbai - 400063, Maharashtra</p>
+                    <p>hello@billeasy.in</p>
+                    <p>support@bileasy.in</p>
+                    <p>+919613******</p>
+                </div>
+                
+                
+                </div>
+            </div>
+        </div> 
+        
+        <div class="footer-icon">
+        <div class="footer-icon-section">
+        <a href="https://www.facebook.com/billeasy" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/billeasy/" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://blog.billeasy.in" title="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/billeasy/" title="Instagram"> <i class="fab fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </div>
+         <div class="footer-version">
+                Billeasy v2.1.1 - Sundarban
+            </div>
+    </div>
+</body>
+</html>
